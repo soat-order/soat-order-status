@@ -3,7 +3,6 @@ from datetime import datetime
 from dataclasses import dataclass, field
 from decimal import *
 from src.core.domain.order_item import OrderItem
-from src.core.domain.payment import Payment
 from src.core.domain.enum.order_status_enum import OrderStatusEnum
 # from src.core.domain.address import Address
 
@@ -22,7 +21,6 @@ class Order():
     # address: Address = field(init=False, default_factory=Address)
     # payments: List[Payment] = field(init=False, default_factory=List[Payment])
     # payments: List[Payment] = field(init=False, default_factory=lambda : [])
-    payments: List[Payment] = field(init=False, default=None)
     
     def calculate(self) -> float:
         self.total = self.deliveryAmount
