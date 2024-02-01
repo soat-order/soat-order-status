@@ -1,5 +1,4 @@
 # soat-order-status
-
 **Criando Ambiente Virtual**
 ```
 $python3 -m venv .env
