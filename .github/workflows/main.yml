@@ -28,7 +28,8 @@ jobs:
       run: |
         tox -e py
         sed -i "s/<source>\/home\/runner\/work\/soat-order-status\/soat-order-status\/app\/src\/core\/usecase<\/source>/<source>\/github\/workspace\/app\/src\/core\/usecase<\/source>/g" /home/runner/work/soat-order-status/soat-order-status/coverage.xml
-        cat coverage.xml | grep source
+        #cat coverage.xml | grep source
+        cat coverage.xml
         
         
     - name: SonarCloud Scan
